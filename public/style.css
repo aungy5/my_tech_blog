@@ -1,0 +1,26 @@
+.posts-section {
+    padding: 40px;
+}
+
+#blog-post-title {
+    font-weight: bold;
+}
+
+#blog-post-topic-author {
+    font-size: medium;
+    color: green;
+}
+
+.body {
+    padding: 20px;
+}
+
+.signup {
+    padding: 20px;
+    background-color: hotpink;
+}
+
+.login-form {
+    padding: 20px;
+    background-color: hotpink;
+}
