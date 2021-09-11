@@ -16,10 +16,10 @@
 
 - [Questions](#questions)
 
-  ## Description
-  In this project we were asked to create a blog website using the model-view-controller (MVC) framework. This framework divides up responsibility into the three aforementioned categories, making it easier to manage bugs and issues. We also used express-session to limit the content users can see if they are not logged in. Before logging in, the user can only see the blog posts on the homepage and cannot do anything other than read them. Once logged in, the user is able to create posts, edit their previous posts, comment on other user's posts, and delete previous posts that they no longer need. 
-  ## Installation
-  There are a lot of npm packages required for this app to work, all of them are listed below. 
+## Description
+In this project we were asked to create a blog website using the model-view-controller (MVC) framework. This framework divides up responsibility into the three aforementioned categories, making it easier to manage bugs and issues. We also used express-session to limit the content users can see if they are not logged in. Before logging in, the user can only see the blog posts on the homepage and cannot do anything other than read them. Once logged in, the user is able to create posts, edit their previous posts, comment on other user's posts, and delete previous posts that they no longer need. 
+## Installation
+There are a lot of npm packages required for this app to work, all of them are listed below. 
   
 bcrypt
 
