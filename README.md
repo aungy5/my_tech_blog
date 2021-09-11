@@ -1,6 +1,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   # MVC Tech Blog
+  
+  Link to Deployed Application => https://pacific-sands-24014.herokuapp.com/
+
+  Link to GitHub Repository => https://github.com/aungy5/my_tech_blog
+  
   ## Table of Contents
 - [Description](#description)
 
