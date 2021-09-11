@@ -6,7 +6,7 @@ const sequelize = require('./config/connection');
 const path = require('path');
 //const helpers = require('./utils');
 
-const helpers = require('./a_utils/auth.js');
+const helpers = require('./a_utils/helpers');
 
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ helpers });
@@ -22,9 +22,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 // Configure and link a session object with the sequelize store
 const sess = {
   secret: 'Super secret secret',
-  cookie: {
-    expires: 10 * 60 * 1000
-  },
+  cookie: {},
   resave: false,
   //rolling: true,
   saveUninitialized: true,

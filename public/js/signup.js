@@ -5,15 +5,19 @@ async function signupForm(event) {
     const email = document.querySelector('#signupInputEmail').value.trim();
     const password = document.querySelector('#signupInputPassword').value.trim();
 
+    console.log(name)
+    console.log(password)
+    console.log(email)
+
     if (name && email && password) {
-        const response = await fetch('/api/users', {
+        const response = await fetch('/api/users/signup', {
             method: 'post',
             body: JSON.stringify({
                 name, 
                 email, 
                 password
             }),
-            headers: { 'Content-Type': 'application.json' }
+            headers: { 'Content-Type': 'application/json' }
         });
 
         if (response.ok) {
@@ -21,9 +25,9 @@ async function signupForm(event) {
             document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
-            console.log("ERROR CREATING USER")
+            console.log(response)
         }
     }
 }
 
-document.querySelector('.signup').addEventListener('click', signupForm);
+document.querySelector('.signup-form').addEventListener('submit', signupForm);

@@ -18,18 +18,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        {{#if logged_in}}
+        {{#if loggedIn}}
         <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
         <a class="nav-link" href="/dashboard" id="dashboard">Dashboard</a>
         <a class="nav-link" href="/dashboard/create/" id="createPost">Create a Post</a>
-        <a class="nav-link" href="/logout" id="logout">Logout</a>
-        {{/if}}
-        {{#unless logged_in}}
+        <a class="nav-link" href="api/users/logout" id="logout">Logout</a>
+        {{else}}
         <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
         <a class="nav-link" href="/login" id="login">Login</a>
         <a class="nav-link" href="/signup" id="signup">Signup</a>
-        <a class="nav-link" href="/logout" id="logout">Logout</a>
-        {{/unless}}
+        {{/if}}
       </div>
     </div>
   </nav>
@@ -41,7 +39,7 @@
     <!--End of the posts-section container-->
 </body>
 
-{{#if logged_in}}
+{{#if loggedIn}}
   <script src="/js/logout.js"></script>
 {{/if}}
 
